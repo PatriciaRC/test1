@@ -1,0 +1,11 @@
+
+    <p>Movie Catalog</p> 
+    <p>Top Rated Movies</p> 
+    <div class="col-sm-4" *ngFor="let movie of catalog">
+        <div class="card">
+            <div class="card-body">
+                <a routerLink="movies/{{movie.id}}">{{ movie.title }}</a>
+            </div>
+        </div>
+    </div>
+
